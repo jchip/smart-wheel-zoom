@@ -1,0 +1,13 @@
+{
+  "compress": {
+    "drop_console": true,
+    "dead_code": true,
+    "unsafe": false,
+    "pure_funcs": ["debug"],
+    "keep_fnames": true,
+    "toplevel": true
+  },
+  "output": {
+    "comments": true
+  }
+}

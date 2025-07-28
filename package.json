@@ -1,0 +1,32 @@
+{
+  "name": "smart-wheel-zoom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "build": "xrun --serial terser manifest images",
+    "terser": "terser --config-file terser.config.json src/content.js -o dist/content.js",
+    "manifest": "shx cp src/manifest.json dist/manifest.json",
+    "images": "shx cp -r src/images dist"
+  },
+  "author": "",
+  "files": [
+    "src",
+    "lib",
+    "dist"
+  ],
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "@xarc/run": "^2.1.5",
+    "rimraf": "^5.0.0",
+    "shx": "^0.4.0",
+    "terser": "^5.33.0"
+  }
+}
